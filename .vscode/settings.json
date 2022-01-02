@@ -1,4 +1,16 @@
 {
+  "editor.parameterHints.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.linkedEditing": true,
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "html.format.wrapLineLength": 0,
+  "html.suggest.html5": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
