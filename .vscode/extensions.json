@@ -3,6 +3,7 @@
     "ritwickdey.liveserver",
     "tomoki1207.pdf",
     "tobermory.es6-string-html",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "dbaeumer.jshint"
   ]
 }
