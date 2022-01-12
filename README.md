@@ -6,7 +6,7 @@
 - backgroundColor `(helyes válasz)`
 - Textalign
 
-## 2. A következő kódrészlet 
+## 2. A felsoroltak közül melyik kódok illeszthetők be a kérdőjel helyére, hogy a div-et zöld színű háttérrel jelenítsék meg?
 <div :style="{ background-color: color }">
 
 const app = Vue.createApp({
@@ -17,7 +17,7 @@ const app = Vue.createApp({
         }
 })
 
-- color = green
-- color: "green"
+- color: green
+- color: "green" `(helyes válasz)`
 - color.green: true
-- color: 
+- color: "rgb(0,255,0)" `(helyes válasz)`
