@@ -7,9 +7,14 @@ const app = Vue.createApp({
       image: "./assets/images/socks_blue.jpg",
       inStock: false,
       details: ["50% cotton", "30% wool", "20% polyester"],
-      variants: [
-        { id: 2234, color: "green", image: "./assets/images/socks_green.jpg" },
-        { id: 2235, color: "blue", image: "./assets/images/socks_blue.jpg" },
+
+      color: "",
+
+      buttons: [
+        { id: 1, color: "red", text:"Piros" },
+        { id: 2, color: "blue", text:"Kék" },
+        { id: 3, color: "yellow", text:"Sárga" },
+
       ],
     };
   },
@@ -20,5 +25,8 @@ const app = Vue.createApp({
     updateImage(variantImage) {
       this.image = variantImage;
     },
+    colorChange(button){
+      this.color = button.color;
+    }
   },
 });

@@ -12,16 +12,16 @@
 
 <body>
   <div id="app">
-    <div class="nav-bar"></div>
+    <!-- <div class="nav-bar"></div> -->
 
-    <div class="cart">Cart({{ cart }})</div>
+    <!-- <div class="cart">Cart({{ cart }})</div> -->
 
-    <div class="product-display">
+    <!-- <div class="product-display">
       <div class="product-container">
         <div class="product-image">
-          <!-- solution -->
+          
           <img :class="{ 'out-of-stock-img': !inStock }" v-bind:src="image">
-          <!-- solution -->
+          
         </div>
         <div class="product-info">
           <h1>{{ product }}</h1>
@@ -39,8 +39,16 @@
           </button>
         </div>
       </div>
+    </div>-->
+
+
+    <div v-for="button in buttons">
+      <button :key="button.id" @click="colorChange(button)" :style="{ color: button.color }">{{ button.text }}</button>
     </div>
-  </div>
+    <!-- NOT WORKING! -->
+    <h1 :class="{ blue: color=='blue' }" :class="{ red: color=='red' }" :class="{ yellow: color=='yellow' }">ASDASDASDAS</h1>
+
+  </div> 
 
   <!-- Import App -->
   <script src="./main.js"></script>

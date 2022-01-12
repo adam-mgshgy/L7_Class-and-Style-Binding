@@ -179,3 +179,17 @@ ul {
     width: 90%;
   }
 }
+
+
+.blue{
+  color: white;
+  background-color: Blue;
+}
+.yellow{
+  color: black;
+  background-color: yellow;
+}
+.red{
+  color: white;
+  background-color: red;
+}
