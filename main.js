@@ -8,14 +8,11 @@ const app = Vue.createApp({
       inStock: false,
       details: ["50% cotton", "30% wool", "20% polyester"],
 
-      color: "",
+      disabledMax: false,
+      disabledMin: false,
 
-      buttons: [
-        { id: 1, color: "red", text:"Piros" },
-        { id: 2, color: "blue", text:"Kék" },
-        { id: 3, color: "yellow", text:"Sárga" },
-
-      ],
+      counter: 0
+      
     };
   },
   methods: {
@@ -25,8 +22,25 @@ const app = Vue.createApp({
     updateImage(variantImage) {
       this.image = variantImage;
     },
-    colorChange(button){
-      this.color = button.color;
-    }
+    Plus() {
+      if (this.counter + 1 > 4) {
+        this.disabledMax = true;
+      }
+      else{
+        this.disabledMin = false;
+
+      }
+      this.counter += 1;
+    },
+    Minus() {
+      if (this.counter - 1 < 1) {
+       this.disabledMin = true;
+      }
+      else{
+        this.disabledMax = false;
+
+      }
+      this.counter -= 1;
+    },
   },
 });

@@ -11,44 +11,22 @@
 </head>
 
 <body>
-  <div id="app">
-    <!-- <div class="nav-bar"></div> -->
+  <div id="app">      
 
-    <!-- <div class="cart">Cart({{ cart }})</div> -->
+<!--Solution-->
+    <button class="button" id="plus" @click="Plus" :class="{ disabledButton: disabledMax }" :disabled="disabledMax">+</button>
+    <button class="button" id="minus" @click="Minus" :class="{ disabledButton: disabledMin }" :disabled="disabledMin">-</button>
 
-    <!-- <div class="product-display">
-      <div class="product-container">
-        <div class="product-image">
-          
-          <img :class="{ 'out-of-stock-img': !inStock }" v-bind:src="image">
-          
-        </div>
-        <div class="product-info">
-          <h1>{{ product }}</h1>
-          <p v-if="inStock">In Stock</p>
-          <p v-else>Out of Stock</p>
-          <ul>
-            <li v-for="detail in details">{{ detail }}</li>
-          </ul>
+   <label >Counter:{{counter}}</label>
+<!--Solution-->
 
-          <div v-for="variant in variants" :key="variant.id" @mouseover="updateImage(variant.image)" class="color-circle" :style="{ backgroundColor: variant.color }">
-          </div>
+   <button class="button" id="plus" @click="">+</button>
+   <button class="button" id="minus" @click="">-</button>
 
-          <button class="button" :class="{ disabledButton: !inStock }" :disabled="!inStock" @click="addToCart">
-            Add to Cart
-          </button>
-        </div>
-      </div>
-    </div>-->
-
-
-    <div v-for="button in buttons">
-      <button :key="button.id" @click="colorChange(button)" :style="{ color: button.color }">{{ button.text }}</button>
-    </div>
-    <!-- NOT WORKING! -->
-    <h1 :class="{ blue: color=='blue' }" :class="{ red: color=='red' }" :class="{ yellow: color=='yellow' }">ASDASDASDAS</h1>
+  <label >Counter:{{counter}}</label>
 
   </div> 
+
 
   <!-- Import App -->
   <script src="./main.js"></script>

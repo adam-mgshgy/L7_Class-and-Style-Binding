@@ -23,3 +23,4 @@ const app = Vue.createApp({
 - color: "rgb(0,255,0)" `(helyes válasz)`
 
 ## Code challange
+A + és a - gombok lenyomásával szabályozhatja a számláló értékét. Hívja meg a helyes függvényeket, illetve állítsa 'Disabled'-é a gombokat, a megadott feltételkor 
